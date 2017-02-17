@@ -5,6 +5,6 @@
     (aset c "innerHTML" "<p>i'm dynamically created</p>")
     (.. js/document (getElementById "container") (appendChild c))))
 
-(deftype Foo [i])
+;(deftype Foo [i])
 
-(defn read-Foo [params] (apply ->Foo params))
+(defn read-Foo [i] i #_(->Foo i))

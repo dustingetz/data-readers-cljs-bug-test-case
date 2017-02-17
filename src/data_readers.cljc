@@ -1,2 +1,2 @@
 {cljs/tag clojure.core/identity
- app/Foo  #'app.core/Foo}
+ app/Foo  #'app.core/read-Foo}

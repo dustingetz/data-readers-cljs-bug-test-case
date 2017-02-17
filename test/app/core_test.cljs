@@ -1,6 +1,5 @@
 (ns app.core-test
-  (:require [cljs.test :refer-macros [deftest testing is]]
-            #_ [app.core :refer []]))
+  (:require [cljs.test :refer-macros [deftest testing is]]))
 
 (deftest silly-test
   (is (= (+ 1 1)
@@ -12,5 +11,5 @@
     (is (= foo 1))))
 
 (deftype test-custom-reader-app-type                        ; fail
-  (let [foo #app/Foo[1]]
+  (let [foo #app/Foo 1]
     (is (= (.-i foo) 1))))
